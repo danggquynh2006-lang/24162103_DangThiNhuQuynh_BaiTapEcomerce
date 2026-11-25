@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="@color/background">
 
-    <!-- HEADER CỐ ĐỊNH -->
+    <!-- HEADER -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="92dp"
@@ -46,7 +46,6 @@
 
     </LinearLayout>
 
-    <!-- NỘI DUNG PROFILE CÓ THỂ CUỘN -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
