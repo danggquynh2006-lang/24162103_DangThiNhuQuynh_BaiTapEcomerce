@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Midnight Purple Brand Colors -->
+    <color name="purple_primary">#542A91</color>
+    <color name="purple_dark">#211B45</color>
+    <color name="purple_secondary">#7654B8</color>
+    <color name="purple_tertiary">#655B9C</color>
+    <color name="lavender">#A69AE8</color>
+    <color name="purple_light">#E9E3FA</color>
+
+    <!-- Surface Colors -->
+    <color name="background">#FAF9FD</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#F1EEFA</color>
+    <color name="outline">#D8D3E5</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#29263A</color>
+    <color name="text_secondary">#777386</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#212121</color>
+    <color name="gray">#777386</color>
+
+    <!-- Semantic Colors -->
+    <color name="success">#267A55</color>
+    <color name="error">#BA1A1A</color>
+    <color name="warning">#A96816</color>
+
+    <!-- Legacy Color Aliases -->
+    <color name="red_primary">@color/purple_primary</color>
+    <color name="red_secondary">@color/purple_secondary</color>
+    <color name="red_light">@color/purple_light</color>
+    <color name="red_dark">@color/purple_dark</color>
+
+</resources>

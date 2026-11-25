@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.LoginApp" parent="Theme.Material3.Dark.NoActionBar">
+
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/lavender</item>
+        <item name="colorOnPrimary">@color/purple_dark</item>
+        <item name="colorPrimaryContainer">@color/purple_primary</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/lavender</item>
+        <item name="colorOnSecondary">@color/purple_dark</item>
+        <item name="colorSecondaryContainer">@color/purple_primary</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+
+        <!-- Tertiary Colors -->
+        <item name="colorTertiary">@color/lavender</item>
+        <item name="colorOnTertiary">@color/purple_dark</item>
+
+        <!-- Surface and Background -->
+        <item name="colorSurface">#211B32</item>
+        <item name="colorOnSurface">#F4F0FA</item>
+        <item name="colorSurfaceVariant">#38304D</item>
+        <item name="colorOnSurfaceVariant">#D4CBE3</item>
+        <item name="android:colorBackground">#171323</item>
+
+        <!-- Outline and Error -->
+        <item name="colorOutline">#716582</item>
+        <item name="colorError">#FFB4AB</item>
+
+        <!-- System Bars -->
+        <item name="android:statusBarColor">#171323</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">#171323</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+    </style>
+
+</resources>

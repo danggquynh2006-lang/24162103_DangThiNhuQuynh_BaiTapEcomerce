@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:background="@drawable/bg_aurora_header"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/btnBackCart"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:text="‹"
+            android:textSize="36sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="GIỎ HÀNG CỦA BẠN"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="48dp"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+    <!-- DANH SÁCH SẢN PHẨM VÀ TRẠNG THÁI TRỐNG -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- DANH SÁCH SẢN PHẨM -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- TIÊU ĐỀ VÀ SỐ LƯỢNG SẢN PHẨM -->
+                <TextView
+                    android:id="@+id/tvCartCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SẢN PHẨM TRONG GIỎ (0)"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_primary"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <!-- DANH SÁCH ĐƯỢC TẠO BẰNG JAVA -->
+                <LinearLayout
+                    android:id="@+id/layoutCartItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- TRẠNG THÁI GIỎ HÀNG TRỐNG -->
+        <TextView
+            android:id="@+id/tvEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="♡&#10;&#10;Giỏ hàng của bạn đang trống!&#10;&#10;Hãy khám phá và chọn sản phẩm yêu thích nhé."
+            android:textSize="16sp"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:padding="32dp"
+            android:visibility="gone"
+            android:background="@color/background"/>
+
+    </FrameLayout>
+
+    <!-- TÓM TẮT ĐƠN HÀNG -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/surface"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="12dp"
+        android:elevation="8dp">
+
+        <!-- TIÊU ĐỀ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SẢN PHẨM ĐƯỢC CHỌN"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- DANH SÁCH SẢN PHẨM ĐƯỢC CHỌN -->
+        <TextView
+            android:id="@+id/tvOrderSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chưa chọn sản phẩm nào"
+            android:textSize="12sp"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/text_secondary"/>
+
+        <!-- ĐƯỜNG PHÂN CÁCH -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/purple_light"/>
+
+        <!-- TỔNG THANH TOÁN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TỔNG THANH TOÁN"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 đ"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/purple_primary"/>
+
+        </LinearLayout>
+
+        <!-- NÚT THANH TOÁN -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="14dp"
+            android:text="TIẾN HÀNH THANH TOÁN"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/purple_primary"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

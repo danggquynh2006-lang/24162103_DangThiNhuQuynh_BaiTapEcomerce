@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="linear"
+                android:angle="0"
+                android:startColor="#211B45"
+                android:centerColor="#542A91"
+                android:endColor="#7654B8"/>
+        </shape>
+    </item>
+
+    <!-- Lavender glow -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="240dp"
+                android:centerX="95%"
+                android:centerY="10%"
+                android:startColor="#99A69AE8"
+                android:centerColor="#447654B8"
+                android:endColor="#00211B45"/>
+        </shape>
+    </item>
+
+    <!-- Violet glow -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="200dp"
+                android:centerX="5%"
+                android:centerY="100%"
+                android:startColor="#887654B8"
+                android:endColor="#00211B45"/>
+        </shape>
+    </item>
+
+</layer-list>
